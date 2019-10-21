@@ -1,3 +1,11 @@
+@import url("https://use.typekit.net/cji3vtb.css");
+body{
+    padding: 0;
+    margin: 0;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .degree_symbol:not(:empty)::after {
     content: "°"
 }
@@ -6,7 +14,70 @@
     display: none;
 }
 
+
+.results{
+    display:grid;
+}
+.top{
+    display:grid;
+    height: 222px;
+    width: 100%;
+    background-color: #1C6FA3;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.location_time{
+    margin-left: 20%;
+    margin-right: 0%;
+    color: white;
+}
+.latlon{
+    color: white;
+}
+#zip{
+    margin: 5% auto;
+    height: 30%;
+    width: 80%;
+}
+.alert{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 124px;
+    background-color: #FD8787;
+}
+.alert_head{
+    margin-left: 20%;
+    font-size: 1.5em;
+}
+.alert_description{
+    width: 80%;
+    margin-top: 5%;
+}
 #map {
 	width: 600px;
     height: 600px;
+}
+.now{
+    display: grid;
+    width: 80%;
+    height: 480px;
+    margin: auto;
+    grid-template-columns: 45% 45% 10%;
+    color: white;
+}
+.current_temp{
+    background-color: #1C6FA3;
+    margin: auto;
+}
+.temp{
+    font-size: 3em;
+}
+.temp_details{
+
+}
+.current_description{
+    background-color: #1C6FA3;
+}
+.current_details{
+    background-color: #AEDDD4;
 }

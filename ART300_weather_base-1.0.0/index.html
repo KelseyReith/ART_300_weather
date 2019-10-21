@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="/js/libraries/leaflet/leaflet.css" />
         <link rel="stylesheet" href="/js/libraries/leaflet/leaflet-openweathermap.css" />
         <link rel="stylesheet" href="/js/libraries/leaflet/leaflet-languageselector.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/cji3vtb.css">
 
         <script src="/js/libraries/leaflet/leaflet.js"></script>
         <script src="/js/libraries/leaflet/Permalink.js"></script>
@@ -26,15 +27,57 @@
     </head>
 
     <body>
-
-
-
-        <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
-        <p id="zip_display"></p>
-
-
         <div class="results" id="app">
-            <h1>TIME</h1>
+            <div class="top">
+                <div class="location_time">
+                    <h1>Manhattan, KS 66502</h1>
+                    <p style="font-size:1.5em;">October 15, 2019</p>
+                    <p style="font-size:1.5em;">3:00pm</p>
+                </div>
+                <div class="latlon">
+                    <p style= font-size:1.5em;>(39.183609, -96.571671)</p>
+                </div>
+                <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+                <p id="zip_display"></p>
+            </div>
+            <div class="alert">
+                <div class="alert_head">
+                    <h1>Tornado Watch</h1>
+                </div>
+                <div class="alert_description">
+                    <p>Clay, Riley, and Pottowatome counties are under a tornado watch until 5:00pm tonight, find shelter.</p>
+                </div>
+                <div id="map"></div>
+            </div>
+            <p style="font-size:2em; margin-left: 7%;">Now</p>
+            <div class="now">
+                <div class="current_temp">
+                    <div class="temp">
+                        <h1>78°F</h1>
+                    </div>
+                    <div class="temp_details">
+                        <p>Feels like 72°</p>
+                        <p>78° / 34°</p>
+                    </div>
+                </div>
+                <div class="current_description">
+                    <div class="current_description_icon">
+
+                    </div>
+                    <div class="currect_description_words">
+
+                    </div>
+                </div>
+                <div class="current_details">
+                    <div class="current_percipiation">
+
+                    </div>
+                    <div class="current_wind">
+
+                    </div>
+                </div>
+            </div>
+            <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
@@ -102,10 +145,9 @@
             <p>{{forecast[0].snow}}</p>
 
             <p>{{forecast[0].dewpt}}</p>
-            <p>{{forecast[0].pres}} mb</p>
+            <p>{{forecast[0].pres}} mb</p> -->
 
         </div>
-        <div id="map"></div>
 
 
 
