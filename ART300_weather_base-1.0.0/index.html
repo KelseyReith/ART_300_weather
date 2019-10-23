@@ -35,7 +35,7 @@
                     <p style="font-size:1.5em;">3:00pm</p>
                 </div>
                 <div class="latlon">
-                    <p style= font-size:1.5em;>(39.183609, -96.571671)</p>
+                    <p style="font-size:1.5em;">(39.183609, -96.571671)</p>
                 </div>
                 <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
                 <p id="zip_display"></p>
@@ -49,7 +49,7 @@
                 </div>
                 <div id="map"></div>
             </div>
-            <p style="font-size:2em; margin-left: 7%;">Now</p>
+            <p style="font-size:2em; margin: 2% auto 1% 7%;">Now</p>
             <div class="now">
                 <div class="current_temp">
                     <div class="temp">
@@ -61,20 +61,262 @@
                     </div>
                 </div>
                 <div class="current_description">
-                    <div class="current_description_icon">
-
-                    </div>
-                    <div class="currect_description_words">
-
+                    <div class="current_description_visuals">
+                        <img class="big_icon" src="/icons/rain.png" alt="Cloud with Rain"/>
+                        <p>Cloudy with a chance of rain.</p>
                     </div>
                 </div>
                 <div class="current_details">
                     <div class="current_percipiation">
-
+                        <p>70%</p>
+                        <img class="wind_rain" src="icons/raindrop.png" alt="Raindrop"/>
+                        <p>5"</p>
                     </div>
                     <div class="current_wind">
+                        <img class="wind_rain" src="icons/wind.png" alt="Wind"/>
+                        <p>33mph S</p>
+                    </div>
+                </div>
+            </div>
+            <p style="font-size:2em; margin: 3% auto 1% 7%;">Forecast</p>
+            <div class="forecast">
+                    <div class="forecast_gap"></div>
+                <div class="day"> <!-- day 1 -->
+                    <div class="forecast_general">
+                        <p>Oct 14</p>
+                        <img class="forecast_icon" src="icons/cloud.png" alt="Cloud"/>
+                        <p>78° / 34°</p>
+                        <p>Cloudy, severe weather</p>  
+                    </div>
+                    <div class="forecast_alert">
 
                     </div>
+                    <div class="forecast_data">
+                        <div class="forecast_data_topic">
+                            <p>Humidity</p>
+                            <p>Air quality</p>
+                            <p>Cloud cover</p>
+                            <p>UV index</p>
+                            <p>Sunrise</p>
+                            <p>Sunset</p>
+                            <p>Moon</p>
+                            <p>Tide</p>
+                        </div>
+                        <div class="forecast_data_result">
+                            <p>55%</p> <!-- humidity -->
+                            <p>Good</p> <!-- air quality -->
+                            <p>Cloudy</p> <!-- cloud cover -->
+                            <p>2</p> <!-- UV index -->
+                            <p>7:36 am</p> <!-- sunrise -->
+                            <p>6:49 pm</p> <!-- sunset -->
+                            <p>Waning Gibbous</p> <!-- moon -->
+                            <p>No Data</p> <!-- tide -->
+                        </div>
+                    </div>
+                </div> 
+                <div class="forecast_gap"></div>
+                <div class="day"> <!-- day 2 -->
+                    <div class="forecast_general">
+                        <p>Oct 15</p>
+                        <img class="forecast_icon" src="icons/sun.png" alt="Sun"/>
+                        <p>66° / 37°</p>
+                        <p>Sunny and clear</p>  
+                    </div>
+                    <div class="forecast_alert">
+                        
+                    </div>
+                    <div class="forecast_data">
+                        <div class="forecast_data_topic">
+                            <p>Humidity</p>
+                            <p>Air quality</p>
+                            <p>Cloud cover</p>
+                            <p>UV index</p>
+                            <p>Sunrise</p>
+                            <p>Sunset</p>
+                            <p>Moon</p>
+                            <p>Tide</p>
+                        </div>
+                        <div class="forecast_data_result">
+                            <p>55%</p> <!-- humidity -->
+                            <p>Good</p> <!-- air quality -->
+                            <p>Clear</p> <!-- cloud cover -->
+                            <p>3</p> <!-- UV index -->
+                            <p>7:36 am</p> <!-- sunrise -->
+                            <p>6:49 pm</p> <!-- sunset -->
+                            <p>Waning Gibbous</p> <!-- moon -->
+                            <p>No Data</p> <!-- tide -->
+                        </div>
+                    </div>
+                </div> 
+                <div class="forecast_gap"></div>
+                <div class="day"> <!-- day 3 -->
+                    <div class="forecast_general">
+                        <p>Oct 16</p>
+                        <img class="forecast_icon" src="icons/sun.png" alt="Sun"/>
+                        <p>60° / 41°</p>
+                        <p>Sunny, 10% chance of rain</p>  
+                    </div>
+                    <div class="forecast_alert">
+                        
+                    </div>
+                    <div class="forecast_data">
+                        <div class="forecast_data_topic">
+                            <p>Humidity</p>
+                            <p>Air quality</p>
+                            <p>Cloud cover</p>
+                            <p>UV index</p>
+                            <p>Sunrise</p>
+                            <p>Sunset</p>
+                            <p>Moon</p>
+                            <p>Tide</p>
+                        </div>
+                        <div class="forecast_data_result">
+                            <p>55%</p> <!-- humidity -->
+                            <p>Good</p> <!-- air quality -->
+                            <p>Clear</p> <!-- cloud cover -->
+                            <p>3</p> <!-- UV index -->
+                            <p>7:36 am</p> <!-- sunrise -->
+                            <p>6:49 pm</p> <!-- sunset -->
+                            <p>Waning Gibbous</p> <!-- moon -->
+                            <p>No Data</p> <!-- tide -->
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast_gap"></div>
+                <div class="day"> <!-- day 4 -->
+                    <div class="forecast_general">
+                        <p>Oct 17</p>
+                        <img class="forecast_icon" src="icons/sun.png" alt="Sun"/>
+                        <p>74° / 55°</p>
+                        <p>Sunny and clear</p>  
+                    </div>
+                    <div class="forecast_alert">
+                        
+                    </div>
+                    <div class="forecast_data">
+                        <div class="forecast_data_topic">
+                            <p>Humidity</p>
+                            <p>Air quality</p>
+                            <p>Cloud cover</p>
+                            <p>UV index</p>
+                            <p>Sunrise</p>
+                            <p>Sunset</p>
+                            <p>Moon</p>
+                            <p>Tide</p>
+                        </div>
+                        <div class="forecast_data_result">
+                            <p>55%</p> <!-- humidity -->
+                            <p>Good</p> <!-- air quality -->
+                            <p>Clear</p> <!-- cloud cover -->
+                            <p>3</p> <!-- UV index -->
+                            <p>7:36 am</p> <!-- sunrise -->
+                            <p>6:49 pm</p> <!-- sunset -->
+                            <p>Waning Gibbous</p> <!-- moon -->
+                            <p>No Data</p> <!-- tide -->
+                        </div>
+                    </div>
+                </div> 
+                <div class="forecast_gap"></div>
+                <div class="day"> <!-- day 5 -->
+                    <div class="forecast_general">
+                        <p>Oct 18</p>
+                        <img class="forecast_icon" src="icons/thunderstorm.png" alt="Cloud with lightning"/>
+                        <p>71° / 47°</p>
+                        <p>Partly cloudy, 90% chance of rain</p>  
+                    </div>
+                    <div class="forecast_alert">
+                        <p style="margin-top: 10%;">Severe thunderstorms</p>
+                    </div>
+                    <div class="forecast_data">
+                        <div class="forecast_data_topic">
+                            <p>Humidity</p>
+                            <p>Air quality</p>
+                            <p>Cloud cover</p>
+                            <p>UV index</p>
+                            <p>Sunrise</p>
+                            <p>Sunset</p>
+                            <p>Moon</p>
+                            <p>Tide</p>
+                        </div>
+                        <div class="forecast_data_result">
+                            <p>55%</p> <!-- humidity -->
+                            <p>Good</p> <!-- air quality -->
+                            <p>Partly</p> <!-- cloud cover -->
+                            <p>2</p> <!-- UV index -->
+                            <p>7:36 am</p> <!-- sunrise -->
+                            <p>6:49 pm</p> <!-- sunset -->
+                            <p>Waning Gibbous</p> <!-- moon -->
+                            <p>No Data</p> <!-- tide -->
+                        </div>
+                    </div>
+                </div> 
+                <div class="forecast_gap"></div>
+            </div>
+            <p style="font-size:2em; margin: 3% auto 1% 7%;">Details Now</p>
+            <div class="details_now">
+                <div class="air">
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Humidity</p>
+                        <p>55%</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Dew point</p>
+                        <p>70.51°</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Air quality</p>
+                        <p>Good</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Pressure</p>
+                        <p>28.69"</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                </div>
+                <div class="clouds">
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Cloud cover</p>
+                        <p>Cloudy</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Visibility</p>
+                        <p>10 mi</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>UV index</p>
+                        <p>2</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                </div>
+                <div class="time">
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Sunrise</p>
+                        <p>7:36 am</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Sunset</p>
+                        <p>6:49 pm</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Moon</p>
+                        <p>Waning Gibbous</p>
+                    </div>
+                    <div class="forecast_gap"></div>
+                    <div class="data">
+                        <p>Tide</p>
+                        <p>No Data</p>
+                    </div>
+                    <div class="forecast_gap"></div>
                 </div>
             </div>
             <!-- <h1>TIME</h1>
