@@ -13,8 +13,6 @@ body{
 .owm-legend-item{
     display: none;
 }
-
-
 .results{
     display:grid;
 }
@@ -88,31 +86,35 @@ body{
     height: 80%;
 }
 .current_description_visuals{
-    margin: auto;
+    text-align: center;
 }
 .big_icon{
     height: 50%;
     width: 50%;
-    margin: auto;
+    margin-top: 2em;
 }
 .current_details{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2em;
+    grid-template-rows: 1fr 2em 1fr;
     background-color: #9BCBC1;
     height: 80%;
     color: black;
 }
 .current_percipiation{
-    margin: auto;
+    text-align: center;
 }
 .current_wind{
-    margin: auto;
+    text-align: center;
 }
-.wind_rain{
+.rain_icon{
     height: 30%;
     width: 30%;
-    margin: auto;
+    margin-top: .8em
+}
+.wind_icon{
+    height: 30%;
+    width: 30%;
+    margin-top: 4.1em;
 }
 .forecast{
     height: 725px;
@@ -144,7 +146,7 @@ body{
 }
 .forecast_alert :last-of-type{
     background-color: #F06161;
-    height: 80%;
+    height: 2em;
     width: 100%;
     font-size: 1.2em;
 }
@@ -182,12 +184,9 @@ body{
     margin-left: -2em;
 }
 .time{
-    background-colorm: #1C6FA3;
+    background-color: #1C6FA3;
     width: 77.5%;
     display: grid;
     grid-template-columns: 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em ;
     margin-left: -2em;
-}
-.data{
-    
 }
